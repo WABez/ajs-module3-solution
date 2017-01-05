@@ -69,7 +69,7 @@
 
 			return $http({
 				method: "GET",
-				url: (ApiBasePath + "menu_items.json")
+				url: ("http://davids-restaurant.herokuapp.com/menu_items.json")
 			})
 			.then(function(result) {
 				for (var i = 0; i < result.data.menu_items.length; i++) {
