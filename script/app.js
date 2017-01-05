@@ -49,7 +49,7 @@
 					}
 				})
 				.catch(function(error) {
-					console.log('An error occured');
+					console.log('An error occured: ' + promise);
 				});
 			};
 		};
