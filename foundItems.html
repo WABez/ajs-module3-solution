@@ -1,6 +1,10 @@
-<ul>
-  <li ng-repeat="item in NIDCtrlrDir.foundItem">
-    {{item.name}}, {{item.short_name}}, {{item.description}}
-    <button class="btn" ng-click="NIDCtrlrDir.onRemove({index: $index});">Don't want this one!</button>
-  </li>
-</ul>
+<div class="success" ng-repeat="item in NIDCtrlrDir.foundItem">
+	<div class="media-left">
+		<p>{{item.short_name}}</p>
+	</div>
+	<div class="media-body">
+		<h4 class="media-heading ng-binding">{{item.name}}</h4>
+		<p class="ng-binding">{{item.description}}</p>
+		<p><button class="btn " ng-click="NIDCtrlrDir.onRemove({index: $index});">Don't want this one!</button></p>
+	</div>
+</div>
